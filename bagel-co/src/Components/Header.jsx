@@ -9,10 +9,10 @@ function Header() {
         BECKY'S BAGEL CO.
       </CompanyName>
       <LinkContainer classname='LinkContainer'>
-        <StyledLink to="">Home</StyledLink>
-        <StyledLink to="Menu">Menu</StyledLink>
-        <StyledLink to="Locations">Locations</StyledLink>
-        <StyledLink to="Contact">Contact</StyledLink>
+        <StyledLink to="">home</StyledLink>
+        <StyledLink to="Menu">menu</StyledLink>
+        <StyledLink to="Locations">locations</StyledLink>
+        <StyledLink to="Contact">contact</StyledLink>
       </LinkContainer>
     </HeaderContainer>
   )
@@ -49,6 +49,8 @@ const StyledLink = styled(Link) `
   font-size: 20px;
   font-weight: 600;
   margin: 0 12px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   transition: 200ms;
   &:hover {
