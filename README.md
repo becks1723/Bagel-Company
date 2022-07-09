@@ -8,4 +8,5 @@ But finally I decided on BAGEL STORE.
 I drafted up the logos and the pages and started coding.
 
 Start date: 07/09/2022
+
 End date: 
