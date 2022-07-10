@@ -1,29 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
 
 function Footer() {
   return(
     <FooterContainer className='FooterContainer'>
-      Hello
+      <FooterLinks>
+        <Links>Github</Links>
+        <Links>LinkedIn</Links>
+      </FooterLinks>
     </FooterContainer>
   )
 }
 
 const FooterContainer = styled.div`
-  height: 50px;
+  height: 200px;
   background-color: #37515F;
   width: 100%;
 `
-const LinkContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
+
+const FooterLinks = styled.div`
+  position: relative;
 `
 
-const StyledLink = styled(Link) `
-  color: #fff;
-  font-size: 20px;
+const Links = styled.div`
+  color: white;
+  font-weight:bold;
+  position: absolute;
+  top: 1000px;
+  right: 16px;
 `
-
 export default Footer;

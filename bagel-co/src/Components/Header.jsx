@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <HeaderContainer classname= 'HeaderContainer'>
-      <CompanyName classname= 'CompanyName'>
+    <HeaderContainer className= 'HeaderContainer'>
+      <CompanyName className= 'CompanyName'>
         BECKY'S BAGEL CO.
       </CompanyName>
-      <LinkContainer classname='LinkContainer'>
+      <LinkContainer className='LinkContainer'>
         <StyledLink to="">home</StyledLink>
         <StyledLink to="Menu">menu</StyledLink>
         <StyledLink to="Locations">locations</StyledLink>
@@ -16,13 +16,12 @@ function Header() {
       </LinkContainer>
     </HeaderContainer>
   )
-
 }
 
 const HeaderContainer = styled.div`
   background-color: #37515F;
   height: 200px;
-  position: fixed;
+  position: relative;
   width: 100%;
   display: grid;
   justify-content: center;
