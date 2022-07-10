@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import Maps from '../Components/Maps';
 
 function Locations(){
   return(
     <LocationContainer className='LocationContainer'>
-      Hello
+      <Maps></Maps>
     </LocationContainer>
   )
 }

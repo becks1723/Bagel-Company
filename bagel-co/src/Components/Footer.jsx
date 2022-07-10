@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import './Footer.css';
 
 function Footer() {
   return(
     <FooterContainer className='FooterContainer'>
       <FooterLinks>
-        <Links>Github</Links>
-        <Links>LinkedIn</Links>
+        <Links className='Links' target='_blank' href="https://github.com/becks1723">Github</Links>
+        <Links className='Links' target='_blank' href="https://www.linkedin.com/in/becky-chen2332/">LinkedIn</Links>
       </FooterLinks>
     </FooterContainer>
   )
@@ -16,17 +17,22 @@ const FooterContainer = styled.div`
   height: 200px;
   background-color: #37515F;
   width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
 `
 
 const FooterLinks = styled.div`
-  position: relative;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 `
 
-const Links = styled.div`
+const Links = styled.a`
+  font-size: 20px;
   color: white;
   font-weight:bold;
-  position: absolute;
-  top: 1000px;
-  right: 16px;
+  display: flex;
+  margin: 10px;
 `
 export default Footer;
