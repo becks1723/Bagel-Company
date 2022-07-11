@@ -10,4 +10,3 @@ React.useEffect(() => {
   }
 }, [ref, map]);
 
-const MyApp = () => <Wrapper apiKey={"AIzaSyCiU8_jK3dipiIkd05UcU5DqV0WSDHHAWg"} render={render} />;
