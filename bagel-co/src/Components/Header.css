@@ -1,3 +1,7 @@
+.HeaderContainer img {
+  width: 190px;
+  object-fit: fill;
+}
 
 @media only screen and (max-width: 850px) {
   .CompanyName {

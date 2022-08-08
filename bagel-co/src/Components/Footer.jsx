@@ -19,7 +19,6 @@ const FooterContainer = styled.div`
   width: 100%;
   left: 0;
   bottom: 0;
-  position: fixed;
 `
 
 const FooterLinks = styled.div`

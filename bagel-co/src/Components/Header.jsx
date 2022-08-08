@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import bagel from '../Pictures/bagel.png';
 import './Header.css';
 
 function Header() {
   return (
     <HeaderContainer className= 'HeaderContainer'>
+      <img src={bagel} alt="Bagel Logo"/>
       <CompanyName className= 'CompanyName'>
         BECKY'S BAGEL CO.
       </CompanyName>
@@ -24,7 +26,8 @@ const HeaderContainer = styled.div`
   height: 200px;
   position: relative;
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
