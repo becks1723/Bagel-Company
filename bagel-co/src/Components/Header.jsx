@@ -7,9 +7,10 @@ import './Header.css';
 function Header() {
   return (
     <HeaderContainer className= 'HeaderContainer'>
-      <img src={bagel} alt="Bagel Logo"/>
       <CompanyName className= 'CompanyName'>
-        BECKY'S BAGEL CO.
+        BECKY'S BAGEL C
+        <img src={bagel} alt="Bagel Logo"/>
+        .
       </CompanyName>
       <LinkContainer className='LinkContainer'>
         <StyledLink to="">home</StyledLink>
@@ -34,10 +35,12 @@ const HeaderContainer = styled.div`
 
 const CompanyName = styled.div`
   text-align: center;
-  font-size: 90px;
   font-weight: bold;
   transition: 0.2s;
   width: 100%;
+  line-height: 90px;
+  display: inline;
+  padding: 20px;
 `
 
 const LinkContainer = styled.div`
@@ -61,5 +64,4 @@ const StyledLink = styled(Link) `
     cursor: pointer;
   }
 `
-
 export default Header;

@@ -6,6 +6,7 @@ function Menu(){
 
   return(
     <MenuContainer className='MenuContainer'>
+      <Blurb>How do you build a bagel?</Blurb>
       <Tabs isFitted variant='soft-rounded'>
         <TabList>
           <Tab _selected={{color: 'white', bg: 'blue.300'}}>bagels</Tab>
@@ -29,10 +30,14 @@ function Menu(){
 }
 
 const MenuContainer = styled.div`
-  margin: 50px;
+  display: block;
   border-width:2px;
   border-color: #37515F;
   border-radius: 22px;
+`
+
+const Blurb = styled.p`
+  font-size: large;
 `
 
 export default Menu;

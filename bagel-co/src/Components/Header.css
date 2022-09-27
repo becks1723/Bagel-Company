@@ -1,16 +1,28 @@
 .HeaderContainer img {
-  width: 190px;
-  object-fit: fill;
+  width: 90px;
+  display: inline;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 2000px) {
   .CompanyName {
-    font-size: 60px;
+    font-size:120px;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1100px) {
+  .CompanyName {
+    font-size: 60px;
+  }
+  .HeaderContainer img{
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .CompanyName {
     font-size: 40px;
+  }
+  .HeaderContainer img {
+    width: 30px;
   }
 }

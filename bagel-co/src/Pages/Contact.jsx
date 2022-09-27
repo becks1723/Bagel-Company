@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Contact(){
   return(
     <ContactContainer className='ContactContainer'>
-      Hello
+    
     </ContactContainer>
   )
 }
